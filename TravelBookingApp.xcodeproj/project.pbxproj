@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0EE0B42DFADE1600DDC03A /* StationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0B22DFADE1600DDC03A /* StationSearchViewModel.swift */; };
 		4E0EE0C32DFAFEB200DDC03A /* ShowingTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */; };
-		4E0EE0C52DFB0E7D00DDC03A /* sadfas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0C42DFB0E7D00DDC03A /* sadfas.swift */; };
 		4E0EE0C72DFB1D3700DDC03A /* BookingFormViewFromTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0C62DFB1D3700DDC03A /* BookingFormViewFromTicket.swift */; };
+		4E0EE0D02DFB1F8700DDC03A /* TrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0CE2DFB1F8700DDC03A /* TrainModel.swift */; };
 		4EEFC78A2DFAB0B900774EED /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7832DFAB0B900774EED /* Model.xcdatamodeld */; };
 		4EEFC78C2DFAB0B900774EED /* TravelBookingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */; };
 		4EEFC78D2DFAB0B900774EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFC7852DFAB0B900774EED /* Assets.xcassets */; };
 		4EEFC78F2DFAB1C200774EED /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC78E2DFAB1C200774EED /* PersistenceController.swift */; };
-		4EEFC7912DFAB24B00774EED /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7902DFAB24B00774EED /* StationModel.swift */; };
 		4EEFC7992DFAB2DC00774EED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7982DFAB2DC00774EED /* HomeView.swift */; };
 		4EEFC79B2DFAB2EE00774EED /* TrainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC79A2DFAB2EE00774EED /* TrainListView.swift */; };
 		4EEFC79D2DFAB2FF00774EED /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC79C2DFAB2FF00774EED /* RouteMapView.swift */; };
@@ -41,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0EE0B22DFADE1600DDC03A /* StationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchViewModel.swift; sourceTree = "<group>"; };
 		4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingTicketView.swift; sourceTree = "<group>"; };
-		4E0EE0C42DFB0E7D00DDC03A /* sadfas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sadfas.swift; sourceTree = "<group>"; };
 		4E0EE0C62DFB1D3700DDC03A /* BookingFormViewFromTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormViewFromTicket.swift; sourceTree = "<group>"; };
+		4E0EE0CE2DFB1F8700DDC03A /* TrainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainModel.swift; sourceTree = "<group>"; };
 		4EEFC7342DFAA4BB00774EED /* TravelBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEFC7412DFAA4BF00774EED /* TravelBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEFC74B2DFAA4BF00774EED /* TravelBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +52,6 @@
 		4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBookingAppApp.swift; sourceTree = "<group>"; };
 		4EEFC7892DFAB0B900774EED /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4EEFC78E2DFAB1C200774EED /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		4EEFC7902DFAB24B00774EED /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
 		4EEFC7982DFAB2DC00774EED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4EEFC79A2DFAB2EE00774EED /* TrainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListView.swift; sourceTree = "<group>"; };
 		4EEFC79C2DFAB2FF00774EED /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
@@ -69,11 +69,6 @@
 		4EEFC74E2DFAA4BF00774EED /* TravelBookingAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TravelBookingAppUITests;
-			sourceTree = "<group>";
-		};
-		4EEFC7942DFAB29700774EED /* ViewModel */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -103,6 +98,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0EE0C82DFB1EDF00DDC03A /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFC7982DFAB2DC00774EED /* HomeView.swift */,
+				4E0EE0B22DFADE1600DDC03A /* StationSearchViewModel.swift */,
+				4E0EE0C62DFB1D3700DDC03A /* BookingFormViewFromTicket.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		4E0EE0C92DFB1F1C00DDC03A /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFC79C2DFAB2FF00774EED /* RouteMapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		4E0EE0CA2DFB1F2C00DDC03A /* BookingForm */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFC79E2DFAB31100774EED /* BookingFormView.swift */,
+			);
+			path = BookingForm;
+			sourceTree = "<group>";
+		};
+		4E0EE0CB2DFB1F3700DDC03A /* ShowTicket */ = {
+			isa = PBXGroup;
+			children = (
+				4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */,
+			);
+			path = ShowTicket;
+			sourceTree = "<group>";
+		};
+		4E0EE0CC2DFB1F5900DDC03A /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFC7A02DFAB32200774EED /* WalletView.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		4E0EE0CD2DFB1F7000DDC03A /* TrainList */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFC79A2DFAB2EE00774EED /* TrainListView.swift */,
+			);
+			path = TrainList;
+			sourceTree = "<group>";
+		};
+		4E0EE0CF2DFB1F8700DDC03A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E0EE0CE2DFB1F8700DDC03A /* TrainModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4EEFC72B2DFAA4BA00774EED = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +181,6 @@
 			children = (
 				4EEFC7832DFAB0B900774EED /* Model.xcdatamodeld */,
 				4EEFC78E2DFAB1C200774EED /* PersistenceController.swift */,
-				4EEFC7902DFAB24B00774EED /* StationModel.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -138,7 +190,7 @@
 			children = (
 				4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */,
 				4EEFC7972DFAB2CE00774EED /* View */,
-				4EEFC7942DFAB29700774EED /* ViewModel */,
+				4E0EE0CF2DFB1F8700DDC03A /* ViewModel */,
 				4EEFC7842DFAB0B900774EED /* CoreData */,
 				4EEFC7852DFAB0B900774EED /* Assets.xcassets */,
 			);
@@ -148,15 +200,13 @@
 		4EEFC7972DFAB2CE00774EED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4EEFC7982DFAB2DC00774EED /* HomeView.swift */,
-				4E0EE0C42DFB0E7D00DDC03A /* sadfas.swift */,
-				4EEFC79A2DFAB2EE00774EED /* TrainListView.swift */,
-				4EEFC79C2DFAB2FF00774EED /* RouteMapView.swift */,
-				4EEFC79E2DFAB31100774EED /* BookingFormView.swift */,
-				4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */,
+				4E0EE0C82DFB1EDF00DDC03A /* HomeView */,
+				4E0EE0CD2DFB1F7000DDC03A /* TrainList */,
+				4E0EE0C92DFB1F1C00DDC03A /* MapView */,
+				4E0EE0CA2DFB1F2C00DDC03A /* BookingForm */,
+				4E0EE0CB2DFB1F3700DDC03A /* ShowTicket */,
+				4E0EE0CC2DFB1F5900DDC03A /* Wallet */,
 				4EEFC7B42DFACE8500774EED /* ProfileScreen.swift */,
-				4EEFC7A02DFAB32200774EED /* WalletView.swift */,
-				4E0EE0C62DFB1D3700DDC03A /* BookingFormViewFromTicket.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,9 +225,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				4EEFC7942DFAB29700774EED /* ViewModel */,
 			);
 			name = TravelBookingApp;
 			packageProductDependencies = (
@@ -308,16 +355,16 @@
 			files = (
 				4EEFC78A2DFAB0B900774EED /* Model.xcdatamodeld in Sources */,
 				4EEFC79B2DFAB2EE00774EED /* TrainListView.swift in Sources */,
-				4EEFC7912DFAB24B00774EED /* StationModel.swift in Sources */,
+				4E0EE0B42DFADE1600DDC03A /* StationSearchViewModel.swift in Sources */,
 				4E0EE0C32DFAFEB200DDC03A /* ShowingTicketView.swift in Sources */,
 				4EEFC78C2DFAB0B900774EED /* TravelBookingAppApp.swift in Sources */,
 				4E0EE0C72DFB1D3700DDC03A /* BookingFormViewFromTicket.swift in Sources */,
-				4E0EE0C52DFB0E7D00DDC03A /* sadfas.swift in Sources */,
 				4EEFC7992DFAB2DC00774EED /* HomeView.swift in Sources */,
 				4EEFC78F2DFAB1C200774EED /* PersistenceController.swift in Sources */,
 				4EEFC7B52DFACE8500774EED /* ProfileScreen.swift in Sources */,
 				4EEFC79F2DFAB31100774EED /* BookingFormView.swift in Sources */,
 				4EEFC79D2DFAB2FF00774EED /* RouteMapView.swift in Sources */,
+				4E0EE0D02DFB1F8700DDC03A /* TrainModel.swift in Sources */,
 				4EEFC7A12DFAB32200774EED /* WalletView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
