@@ -24,3 +24,4 @@ struct TrainModel: Identifiable {
     let classes: [String]
     let prices: [String: Double]
 }
+

@@ -16,18 +16,21 @@ struct TicketCard: Identifiable {
     let price: String
 }
 
+
 struct HomeView: View {
     @State private var src = ""
     @State private var dest = ""
     @State private var showingResults = false
+    @State private var selectedTicket: TicketCard? = nil
+    @State private var showBooking = false
     @StateObject var vm = StationSearchViewModel()
-    
+
     let sampleTickets = [
         TicketCard(from: "Chennai", to: "Tuticorin", departure: "06:00 AM", arrival: "12:00 PM", price: "₹450"),
         TicketCard(from: "Madurai", to: "Chennai", departure: "08:00 AM", arrival: "02:00 PM", price: "₹500"),
         TicketCard(from: "Coimbatore", to: "Trichy", departure: "09:30 AM", arrival: "01:30 PM", price: "₹400")
     ]
-    
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -45,31 +48,31 @@ struct HomeView: View {
                             .resizable()
                             .frame(width: 55, height: 55)
                     }
-                    
+
                     VStack(spacing: 16) {
                         Text("Railway Ticket Booking")
                             .font(.title3)
                             .bold()
-                        
+
                         TextField("Source station", text: $src)
                             .padding()
                             .background(Color.white)
                             .cornerRadius(15)
                             .shadow(radius: 3)
-                        
+
                         TextField("Destination station", text: $dest)
                             .padding()
                             .background(Color.white)
                             .cornerRadius(15)
                             .shadow(radius: 3)
-                        
+
                         NavigationLink(
                             destination: TrainListView(trains: vm.filteredTrains),
                             isActive: $showingResults
                         ) {
                             EmptyView()
                         }
-                        
+
                         Button("Search Trains") {
                             vm.searchTrains(from: src, to: dest)
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
@@ -88,7 +91,7 @@ struct HomeView: View {
                     .background(Color.white)
                     .cornerRadius(15)
                     .shadow(radius: 5)
-                    
+
                     VStack(alignment: .leading) {
                         Text("Cheap bus tickets")
                             .font(.title3)
@@ -97,7 +100,7 @@ struct HomeView: View {
                             .foregroundColor(.gray)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    
+
                     ForEach(sampleTickets) { ticket in
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
@@ -110,18 +113,31 @@ struct HomeView: View {
                             Text("Departure: \(ticket.departure)")
                             Text("Arrival: \(ticket.arrival)")
                                 .foregroundColor(.gray)
-                            Button("Book Now") {}
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(Color.orange)
-                                .foregroundColor(.white)
-                                .cornerRadius(15)
+
+                            Button("Book Now") {
+                                selectedTicket = ticket
+                                showBooking = true
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.orange)
+                            .foregroundColor(.white)
+                            .cornerRadius(15)
                         }
                         .padding()
                         .background(Color.white)
                         .cornerRadius(15)
                         .shadow(radius: 4)
                     }
+
+                    // Hidden NavigationLink for Booking
+                    NavigationLink(
+                        destination: selectedTicket.map { BookingFormViewFromTicket(ticket: $0) },
+                        isActive: $showBooking
+                    ) {
+                        EmptyView()
+                    }
+
                 }
                 .padding()
             }
