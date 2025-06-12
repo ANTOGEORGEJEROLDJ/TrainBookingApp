@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0EE0C32DFAFEB200DDC03A /* ShowingTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */; };
+		4E0EE0C52DFB0E7D00DDC03A /* sadfas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0C42DFB0E7D00DDC03A /* sadfas.swift */; };
 		4EEFC78A2DFAB0B900774EED /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7832DFAB0B900774EED /* Model.xcdatamodeld */; };
 		4EEFC78C2DFAB0B900774EED /* TravelBookingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */; };
 		4EEFC78D2DFAB0B900774EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFC7852DFAB0B900774EED /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingTicketView.swift; sourceTree = "<group>"; };
+		4E0EE0C42DFB0E7D00DDC03A /* sadfas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sadfas.swift; sourceTree = "<group>"; };
 		4EEFC7342DFAA4BB00774EED /* TravelBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEFC7412DFAA4BF00774EED /* TravelBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEFC74B2DFAA4BF00774EED /* TravelBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,11 +147,13 @@
 			isa = PBXGroup;
 			children = (
 				4EEFC7982DFAB2DC00774EED /* HomeView.swift */,
+				4E0EE0C42DFB0E7D00DDC03A /* sadfas.swift */,
 				4EEFC79A2DFAB2EE00774EED /* TrainListView.swift */,
 				4EEFC79C2DFAB2FF00774EED /* RouteMapView.swift */,
 				4EEFC79E2DFAB31100774EED /* BookingFormView.swift */,
-				4EEFC7A02DFAB32200774EED /* WalletView.swift */,
+				4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */,
 				4EEFC7B42DFACE8500774EED /* ProfileScreen.swift */,
+				4EEFC7A02DFAB32200774EED /* WalletView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,7 +306,9 @@
 				4EEFC78A2DFAB0B900774EED /* Model.xcdatamodeld in Sources */,
 				4EEFC79B2DFAB2EE00774EED /* TrainListView.swift in Sources */,
 				4EEFC7912DFAB24B00774EED /* StationModel.swift in Sources */,
+				4E0EE0C32DFAFEB200DDC03A /* ShowingTicketView.swift in Sources */,
 				4EEFC78C2DFAB0B900774EED /* TravelBookingAppApp.swift in Sources */,
+				4E0EE0C52DFB0E7D00DDC03A /* sadfas.swift in Sources */,
 				4EEFC7992DFAB2DC00774EED /* HomeView.swift in Sources */,
 				4EEFC78F2DFAB1C200774EED /* PersistenceController.swift in Sources */,
 				4EEFC7B52DFACE8500774EED /* ProfileScreen.swift in Sources */,

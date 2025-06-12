@@ -18,6 +18,7 @@
         <attribute name="destination" optional="YES" attributeType="String"/>
         <attribute name="fare" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="passengerName" optional="YES" attributeType="String"/>
         <attribute name="seatClass" optional="YES" attributeType="String"/>
         <attribute name="source" optional="YES" attributeType="String"/>
         <attribute name="trainName" optional="YES" attributeType="String"/>

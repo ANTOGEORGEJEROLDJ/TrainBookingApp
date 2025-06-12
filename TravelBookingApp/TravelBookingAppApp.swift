@@ -8,15 +8,22 @@
 import SwiftUI
 
 @main
-struct TravelBookingAppApp: App {
-    let persistence = PersistenceController.shared
+struct TravelBookingApp: App {
+    let persistenceController = PersistenceController.shared
 
-      var body: some Scene {
+    var body: some Scene {
         WindowGroup {
-          NavigationStack {
-            HomeView()
-              .environment(\.managedObjectContext, persistence.container.viewContext)
-          }
+            TabView {
+                
+                HomeView()
+                    .tabItem { Label("Home", systemImage: "house") }
+                WalletView()
+                    .tabItem { Label("Wallet", systemImage: "wallet.pass") }
+
+                ProfileScreen()
+                    .tabItem { Label("Profile", systemImage: "person.crop.circle") }
+            }
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
-      }
     }
+}

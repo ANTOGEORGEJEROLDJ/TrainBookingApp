@@ -4,25 +4,23 @@
 //
 //  Created by Paranjothi iOS MacBook Pro on 12/06/25.
 //
-import SwiftUI
 import CoreData
 
-
 struct PersistenceController {
-    static let preview: PersistenceController = {
-            let controller = PersistenceController(inMemory: true)
-            return controller
-        }()
-  static let shared = PersistenceController()
-  let container: NSPersistentContainer
+    static let shared = PersistenceController()
 
-  init(inMemory: Bool = false) {
-    container = NSPersistentContainer(name: "Model")
-    if inMemory {
-      container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+    let container: NSPersistentContainer
+
+    init(inMemory: Bool = false) {
+        container = NSPersistentContainer(name: "Model") // <- This must match your `.xcdatamodeld` file name
+        if inMemory {
+            container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+        }
+
+        container.loadPersistentStores { storeDescription, error in
+            if let error = error as NSError? {
+                fatalError("Unresolved error: \(error), \(error.userInfo)")
+            }
+        }
     }
-    container.loadPersistentStores { _, error in
-      if let e = error { fatalError(e.localizedDescription) }
-    }
-  }
 }

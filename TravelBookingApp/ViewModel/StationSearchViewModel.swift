@@ -6,36 +6,38 @@
 //
 
 import Foundation
-import CoreLocation
+import SwiftUI
 
 class StationSearchViewModel: ObservableObject {
-  @Published var allTrains: [TrainModel] = []
-  @Published var filteredTrains: [TrainModel] = []
-
-  init() {
-    populateDummyTrains()
-  }
-
-  func populateDummyTrains() {
-    let st1 = StationModel(id: UUID(), name: "Ooty", coordinate: CLLocationCoordinate2D(latitude: 11.0168, longitude: 76.9558))
-    let st2 = StationModel(id: UUID(), name: "Chennai", coordinate: CLLocationCoordinate2D(latitude: 13.0827, longitude: 80.2707))
-    let t1 = TrainModel(
-      id: UUID(),
-      name: "IR Chennai Express",
-      source: st1,
-      destination: st2,
-      departure: Calendar.current.date(byAdding: .hour, value: 3, to: Date())!,
-      arrival: Calendar.current.date(byAdding: .hour, value: 9, to: Date())!,
-      classes: ["Sleeper", "3A", "2A", "1A"],
-      prices: ["Sleeper": 400, "3A": 800, "2A": 1200, "1A": 2000]
-    )
-    allTrains = [t1]
-  }
-
-  func searchTrains(from: String, to: String) {
-    filteredTrains = allTrains.filter {
-      $0.source.name.localizedCaseInsensitiveContains(from) &&
-      $0.destination.name.localizedCaseInsensitiveContains(to)
+    @Published var allTrains: [TrainModel] = [
+        TrainModel(
+            id: UUID(),
+            name: "Chennai Express",
+            source: StationModel(id: UUID(), name: "Chennai", coordinate: .init(latitude: 13.08, longitude: 80.27)),
+            destination: StationModel(id: UUID(), name: "Delhi", coordinate: .init(latitude: 28.61, longitude: 77.20)),
+            departure: Date(),
+            arrival: Date().addingTimeInterval(3600 * 6),
+            classes: ["Tier 1 AC", "Sleeper"],
+            prices: ["Tier 1 AC": 1200, "Sleeper": 400]
+        ),
+        TrainModel(
+            id: UUID(),
+            name: "Tuticorin Superfast",
+            source: StationModel(id: UUID(), name: "Chennai", coordinate: .init(latitude: 13.08, longitude: 80.27)),
+            destination: StationModel(id: UUID(), name: "Tuticorin", coordinate: .init(latitude: 8.76, longitude: 78.13)),
+            departure: Date(),
+            arrival: Date().addingTimeInterval(3600 * 9),
+            classes: ["Tier 2 AC", "Sleeper"],
+            prices: ["Tier 2 AC": 950, "Sleeper": 350]
+        )
+    ]
+    
+    @Published var filteredTrains: [TrainModel] = []
+    
+    func searchTrains(from: String, to: String) {
+        filteredTrains = allTrains.filter {
+            $0.source.name.lowercased().contains(from.lowercased()) &&
+            $0.destination.name.lowercased().contains(to.lowercased())
+        }
     }
-  }
 }
