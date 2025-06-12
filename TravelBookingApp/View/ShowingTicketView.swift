@@ -30,6 +30,7 @@ struct ShowingTicketView: View {
                     .bold()
             }
             .padding()
+            .frame(width: 300, height: 500)
             .background(Color.orange.opacity(0.2))
             .cornerRadius(12)
 

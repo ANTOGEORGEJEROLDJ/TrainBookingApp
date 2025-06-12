@@ -29,6 +29,7 @@ struct HomeView: View {
     ]
     
     var body: some View {
+        NavigationStack {
             ScrollView {
                 VStack(spacing: 20) {
                     HStack {
@@ -37,11 +38,9 @@ struct HomeView: View {
                                 .font(.title)
                                 .bold()
                             Text("Find cheap bus tickets")
-                                .font(.subheadline)
-                                .foregroundColor(.black.opacity(0.5))
+                                .foregroundColor(.gray)
                         }
                         Spacer()
-                        
                         Image(systemName: "person.crop.circle.fill")
                             .resizable()
                             .frame(width: 55, height: 55)
@@ -126,6 +125,6 @@ struct HomeView: View {
                 }
                 .padding()
             }
-        
+        }
     }
 }
