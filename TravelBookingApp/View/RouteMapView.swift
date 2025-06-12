@@ -15,14 +15,12 @@ struct RouteMapView: View {
   var body: some View {
         VStack {
                 MapView(route: route, src: train.source.coordinate, dst: train.destination.coordinate)
-                    .frame(height: 300)
+                    .frame(height: 650)
                 Text("Distance: \(routeDistanceString)")
                     .padding(.vertical, 8)
-//                NavigationLink("Book Ticket") {
-//                    BookingFormView(train: train, distance: route?.distance ?? 0.0)
-//                }
-//                .buttonStyle(.borderedProminent)
+            
           Spacer()
+            
                 }
                 .padding()
                 .navigationTitle("Route & Distance")

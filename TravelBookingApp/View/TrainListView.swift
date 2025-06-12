@@ -32,27 +32,32 @@ struct TrainListView: View {
                         .foregroundColor(.gray)
                     }
                     
-                    HStack {
+                    HStack(spacing: 25) {
                         NavigationLink(destination: RouteMapView(train: t)) {
                             Text("View Route")
-                                .frame(maxWidth: .infinity)
+                                .frame(width: 100, height: 19)
                                 .padding()
+                                .bold()
                                 .background(Color.blue)
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
+                                .shadow(radius: 3)
                         }
                         
                         NavigationLink(destination: BookingFormView(train: t, distance: 0)) {
                             Text("Book Now")
-                                .frame(maxWidth: .infinity)
+                                .frame(width: 100, height: 19)
                                 .padding()
+                                .bold()
                                 .background(Color.orange)
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
+                                .shadow(radius: 3)
                         }
                     }
                 }
                 .padding()
+                .frame(width: 350)
                 .background(.ultraThinMaterial)
                 .cornerRadius(15)
                 .shadow(radius: 3)

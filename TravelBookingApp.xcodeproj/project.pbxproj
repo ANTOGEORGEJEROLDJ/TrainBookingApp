@@ -130,11 +130,11 @@
 		4EEFC7882DFAB0B900774EED /* TravelBookingApp */ = {
 			isa = PBXGroup;
 			children = (
+				4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */,
 				4EEFC7972DFAB2CE00774EED /* View */,
 				4EEFC7942DFAB29700774EED /* ViewModel */,
 				4EEFC7842DFAB0B900774EED /* CoreData */,
 				4EEFC7852DFAB0B900774EED /* Assets.xcassets */,
-				4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */,
 			);
 			path = TravelBookingApp;
 			sourceTree = "<group>";
