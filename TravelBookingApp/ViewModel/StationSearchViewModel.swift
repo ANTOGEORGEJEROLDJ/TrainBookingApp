@@ -17,7 +17,7 @@ class StationSearchViewModel: ObservableObject {
   }
 
   func populateDummyTrains() {
-    let st1 = StationModel(id: UUID(), name: "Tuticorin", coordinate: CLLocationCoordinate2D(latitude: 11.0168, longitude: 76.9558))
+    let st1 = StationModel(id: UUID(), name: "Ooty", coordinate: CLLocationCoordinate2D(latitude: 11.0168, longitude: 76.9558))
     let st2 = StationModel(id: UUID(), name: "Chennai", coordinate: CLLocationCoordinate2D(latitude: 13.0827, longitude: 80.2707))
     let t1 = TrainModel(
       id: UUID(),

@@ -14,7 +14,7 @@ struct TravelBookingAppApp: App {
       var body: some Scene {
         WindowGroup {
           NavigationStack {
-            StationSearchView()
+            HomeView()
               .environment(\.managedObjectContext, persistence.container.viewContext)
           }
         }
