@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BookingFormViewFromTicket: View {
     let ticket: TicketCard
+    
 
     @State private var passengerName = ""
     @State private var seatClass = "Sleeper"

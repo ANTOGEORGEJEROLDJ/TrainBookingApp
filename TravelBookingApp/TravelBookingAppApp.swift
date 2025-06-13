@@ -13,16 +13,17 @@ struct TravelBookingApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TabView {
-                
-                HomeView()
-                    .tabItem { Label("Home", systemImage: "house") }
-                WalletView()
-                    .tabItem { Label("Wallet", systemImage: "wallet.pass") }
-
-                ProfileScreen()
-                    .tabItem { Label("Profile", systemImage: "person.crop.circle") }
-            }
+            SelectingView()
+//            TabView {
+//                
+//                TrainHomeView()
+//                    .tabItem { Label("Home", systemImage: "house") }
+//                WalletView()
+//                    .tabItem { Label("Wallet", systemImage: "wallet.pass") }
+//
+//                ProfileScreen()
+//                    .tabItem { Label("Profile", systemImage: "person.crop.circle") }
+//            }
             .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

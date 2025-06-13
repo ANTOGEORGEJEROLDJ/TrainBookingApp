@@ -17,7 +17,7 @@ struct TicketCard: Identifiable {
 }
 
 
-struct HomeView: View {
+struct TrainHomeView: View {
     @State private var src = ""
     @State private var dest = ""
     @State private var showingResults = false
@@ -37,7 +37,7 @@ struct HomeView: View {
                 VStack(spacing: 20) {
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("HariBUS")
+                            Text("HariTRAIN")
                                 .font(.title)
                                 .bold()
                             Text("Find cheap bus tickets")
@@ -54,16 +54,18 @@ struct HomeView: View {
                             .font(.title3)
                             .bold()
 
-                        TextField("Source station", text: $src)
+                        TextField("From", text: $src)
                             .padding()
+                            .frame(width: 320, height: 50)
                             .background(Color.white)
-                            .cornerRadius(15)
+                            .cornerRadius(12)
                             .shadow(radius: 3)
 
-                        TextField("Destination station", text: $dest)
+                        TextField("To", text: $dest)
                             .padding()
+                            .frame(width: 320, height: 50)
                             .background(Color.white)
-                            .cornerRadius(15)
+                            .cornerRadius(13)
                             .shadow(radius: 3)
 
                         NavigationLink(
@@ -90,7 +92,7 @@ struct HomeView: View {
                     .padding()
                     .background(Color.white)
                     .cornerRadius(15)
-                    .shadow(radius: 5)
+                    .shadow(radius: 3)
 
                     VStack(alignment: .leading) {
                         Text("Cheap bus tickets")

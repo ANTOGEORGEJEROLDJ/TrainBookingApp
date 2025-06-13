@@ -17,8 +17,8 @@ class StationSearchViewModel: ObservableObject {
             destination: StationModel(id: UUID(), name: "Delhi", coordinate: .init(latitude: 28.61, longitude: 77.20)),
             departure: Date(),
             arrival: Date().addingTimeInterval(3600 * 6),
-            classes: ["Tier 1 AC", "Sleeper"],
-            prices: ["Tier 1 AC": 1200, "Sleeper": 400]
+            classes: ["Tier 1 AC","Tier 2 AC", "Sleeper"],
+            prices: ["Tier 1 AC": 1200,"Tier 2 AC": 800, "Sleeper": 400]
         ),
         TrainModel(
             id: UUID(),
