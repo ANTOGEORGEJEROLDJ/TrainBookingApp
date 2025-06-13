@@ -11,22 +11,25 @@ struct SelectingView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                HStack {
-                    Button(action: {}) {
-                        Image("back")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 45, height: 45)
-                            .cornerRadius(15)
+                VStack{
+                    HStack {
+                        Button(action: {}) {
+                            Image("")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 45, height: 45)
+                                .cornerRadius(15)
+                        }
+                        
+                        Text("Select Your Travel Mode")
+                            .font(.headline)
+                            .padding(.leading, 20)
+                        
+                        Spacer()
                     }
-
-                    Text("Select Your Travel Mode")
-                        .font(.headline)
-                        .padding(.leading, 20)
-
-                    Spacer()
-                }
-                .padding()
+                    .padding()
+                }.padding()
+                    .padding(.top, -40)
 
                 ScrollView {
                     VStack(spacing: 30) {

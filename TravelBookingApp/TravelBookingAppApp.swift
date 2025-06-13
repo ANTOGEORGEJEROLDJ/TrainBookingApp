@@ -25,7 +25,8 @@ struct TravelBookingApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SelectingView()
+            SignInScreen()
+//            SelectingView()
 
             .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }

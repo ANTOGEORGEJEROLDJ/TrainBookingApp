@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3886BBD0D0749809FEBDD2A2 /* Pods_TravelBookingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE436C0F1ACF5AE9EA15ED08 /* Pods_TravelBookingAppTests.framework */; };
+		4AA4DD8E22893B3797C832A1 /* Pods_TravelBookingApp_TravelBookingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C084459F399410BFCF6271 /* Pods_TravelBookingApp_TravelBookingAppUITests.framework */; };
 		4E0EE0B42DFADE1600DDC03A /* StationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0B22DFADE1600DDC03A /* StationSearchViewModel.swift */; };
 		4E0EE0C32DFAFEB200DDC03A /* ShowingTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */; };
 		4E0EE0C72DFB1D3700DDC03A /* TrainBookingFormViewFromTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0C62DFB1D3700DDC03A /* TrainBookingFormViewFromTicket.swift */; };
@@ -23,7 +25,6 @@
 		4E6CF3582DFC61AC0021980A /* BusBookingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF3562DFC61AC0021980A /* BusBookingFormView.swift */; };
 		4E6CF35C2DFC62400021980A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF35B2DFC62400021980A /* SignInView.swift */; };
 		4E6CF3642DFC62D50021980A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF3632DFC62D50021980A /* CustomTextField.swift */; };
-		4E6CF3662DFC69D20021980A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6CF3652DFC69D20021980A /* GoogleService-Info.plist */; };
 		4E6CF3692DFC6A640021980A /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4E6CF3682DFC6A640021980A /* FirebaseAI */; };
 		4E6CF36B2DFC6A640021980A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4E6CF36A2DFC6A640021980A /* FirebaseAnalytics */; };
 		4E6CF36D2DFC6A640021980A /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4E6CF36C2DFC6A640021980A /* FirebaseAnalyticsCore */; };
@@ -51,6 +52,9 @@
 		4E6CF3992DFC6A640021980A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4E6CF3982DFC6A640021980A /* FirebaseStorage */; };
 		4E6CF39B2DFC6A640021980A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4E6CF39A2DFC6A640021980A /* FirebaseStorageCombine-Community */; };
 		4E6CF39D2DFC6A640021980A /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4E6CF39C2DFC6A640021980A /* FirebaseVertexAI */; };
+		4E6CF3A52DFC6C7C0021980A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6CF3A42DFC6C7C0021980A /* GoogleService-Info.plist */; };
+		4E6CF3AA2DFC6F4A0021980A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 4E6CF3A92DFC6F4A0021980A /* GoogleSignIn */; };
+		4E6CF3AC2DFC6F4A0021980A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4E6CF3AB2DFC6F4A0021980A /* GoogleSignInSwift */; };
 		4EEFC78A2DFAB0B900774EED /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7832DFAB0B900774EED /* Model.xcdatamodeld */; };
 		4EEFC78C2DFAB0B900774EED /* TravelBookingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */; };
 		4EEFC78D2DFAB0B900774EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFC7852DFAB0B900774EED /* Assets.xcassets */; };
@@ -61,6 +65,7 @@
 		4EEFC79F2DFAB31100774EED /* BookingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC79E2DFAB31100774EED /* BookingFormView.swift */; };
 		4EEFC7A12DFAB32200774EED /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7A02DFAB32200774EED /* WalletView.swift */; };
 		4EEFC7B52DFACE8500774EED /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7B42DFACE8500774EED /* ProfileScreen.swift */; };
+		F4A78B1419588ADF7352E19A /* Pods_TravelBookingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F78DE42D68D39D968A1516 /* Pods_TravelBookingApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00011B1BDDA453DFBABCAD44 /* Pods-TravelBookingApp-TravelBookingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBookingApp-TravelBookingAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TravelBookingApp-TravelBookingAppUITests/Pods-TravelBookingApp-TravelBookingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		367F0002761A506155C6E891 /* Pods-TravelBookingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBookingAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TravelBookingAppTests/Pods-TravelBookingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E0EE0B22DFADE1600DDC03A /* StationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchViewModel.swift; sourceTree = "<group>"; };
 		4E0EE0C22DFAFEB200DDC03A /* ShowingTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingTicketView.swift; sourceTree = "<group>"; };
 		4E0EE0C62DFB1D3700DDC03A /* TrainBookingFormViewFromTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainBookingFormViewFromTicket.swift; sourceTree = "<group>"; };
@@ -97,7 +104,9 @@
 		4E6CF3562DFC61AC0021980A /* BusBookingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusBookingFormView.swift; sourceTree = "<group>"; };
 		4E6CF35B2DFC62400021980A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		4E6CF3632DFC62D50021980A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		4E6CF3652DFC69D20021980A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E6CF3A42DFC6C7C0021980A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E6CF3A62DFC6CC20021980A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4E6CF3A72DFC6D1A0021980A /* TravelBookingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TravelBookingApp.entitlements; sourceTree = "<group>"; };
 		4EEFC7342DFAA4BB00774EED /* TravelBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEFC7412DFAA4BF00774EED /* TravelBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEFC74B2DFAA4BF00774EED /* TravelBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +120,13 @@
 		4EEFC79E2DFAB31100774EED /* BookingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormView.swift; sourceTree = "<group>"; };
 		4EEFC7A02DFAB32200774EED /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		4EEFC7B42DFACE8500774EED /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		57C364B391BD408E1325CE15 /* Pods-TravelBookingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBookingApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelBookingApp/Pods-TravelBookingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		714E351832B953076FF8AD67 /* Pods-TravelBookingApp-TravelBookingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBookingApp-TravelBookingAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TravelBookingApp-TravelBookingAppUITests/Pods-TravelBookingApp-TravelBookingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE436C0F1ACF5AE9EA15ED08 /* Pods_TravelBookingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBookingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F78DE42D68D39D968A1516 /* Pods_TravelBookingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBookingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C084459F399410BFCF6271 /* Pods_TravelBookingApp_TravelBookingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBookingApp_TravelBookingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEB104272B1649F73053FF2 /* Pods-TravelBookingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBookingAppTests.release.xcconfig"; path = "Target Support Files/Pods-TravelBookingAppTests/Pods-TravelBookingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF27465CE456770D92FEC1DF /* Pods-TravelBookingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBookingApp.release.xcconfig"; path = "Target Support Files/Pods-TravelBookingApp/Pods-TravelBookingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -140,11 +156,13 @@
 				4E6CF36B2DFC6A640021980A /* FirebaseAnalytics in Frameworks */,
 				4E6CF3912DFC6A640021980A /* FirebaseMLModelDownloader in Frameworks */,
 				4E6CF3832DFC6A640021980A /* FirebaseDynamicLinks in Frameworks */,
+				4E6CF3AA2DFC6F4A0021980A /* GoogleSignIn in Frameworks */,
 				4E6CF3712DFC6A640021980A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				4E6CF3792DFC6A640021980A /* FirebaseAuth in Frameworks */,
 				4E6CF3852DFC6A640021980A /* FirebaseFirestore in Frameworks */,
 				4E6CF3872DFC6A640021980A /* FirebaseFirestoreCombine-Community in Frameworks */,
 				4E6CF39D2DFC6A640021980A /* FirebaseVertexAI in Frameworks */,
+				4E6CF3AC2DFC6F4A0021980A /* GoogleSignInSwift in Frameworks */,
 				4E6CF38D2DFC6A640021980A /* FirebaseInAppMessaging-Beta in Frameworks */,
 				4E6CF38B2DFC6A640021980A /* FirebaseFunctionsCombine-Community in Frameworks */,
 				4E6CF3752DFC6A640021980A /* FirebaseAppCheck in Frameworks */,
@@ -158,6 +176,7 @@
 				4E6CF37B2DFC6A640021980A /* FirebaseAuthCombine-Community in Frameworks */,
 				4E6CF3932DFC6A640021980A /* FirebaseMessaging in Frameworks */,
 				4E6CF38F2DFC6A640021980A /* FirebaseInstallations in Frameworks */,
+				F4A78B1419588ADF7352E19A /* Pods_TravelBookingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3886BBD0D0749809FEBDD2A2 /* Pods_TravelBookingAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +192,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA4DD8E22893B3797C832A1 /* Pods_TravelBookingApp_TravelBookingAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02FD2D1B00041A048E795306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57C364B391BD408E1325CE15 /* Pods-TravelBookingApp.debug.xcconfig */,
+				EF27465CE456770D92FEC1DF /* Pods-TravelBookingApp.release.xcconfig */,
+				714E351832B953076FF8AD67 /* Pods-TravelBookingApp-TravelBookingAppUITests.debug.xcconfig */,
+				00011B1BDDA453DFBABCAD44 /* Pods-TravelBookingApp-TravelBookingAppUITests.release.xcconfig */,
+				367F0002761A506155C6E891 /* Pods-TravelBookingAppTests.debug.xcconfig */,
+				EAEB104272B1649F73053FF2 /* Pods-TravelBookingAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4E0EE0C82DFB1EDF00DDC03A /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +365,8 @@
 				4EEFC7442DFAA4BF00774EED /* TravelBookingAppTests */,
 				4EEFC74E2DFAA4BF00774EED /* TravelBookingAppUITests */,
 				4EEFC7352DFAA4BB00774EED /* Products */,
+				02FD2D1B00041A048E795306 /* Pods */,
+				D9131A6CE53F8143C146513F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,6 +392,8 @@
 		4EEFC7882DFAB0B900774EED /* TravelBookingApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E6CF3A72DFC6D1A0021980A /* TravelBookingApp.entitlements */,
+				4E6CF3A62DFC6CC20021980A /* Info.plist */,
 				4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */,
 				4E0EE0FE2DFBFCB000DDC03A /* MainTabView.swift */,
 				4E6CF35A2DFC622A0021980A /* Login */,
@@ -364,7 +402,7 @@
 				4E0EE0ED2DFBE73600DDC03A /* Train */,
 				4EEFC7842DFAB0B900774EED /* CoreData */,
 				4EEFC7852DFAB0B900774EED /* Assets.xcassets */,
-				4E6CF3652DFC69D20021980A /* GoogleService-Info.plist */,
+				4E6CF3A42DFC6C7C0021980A /* GoogleService-Info.plist */,
 			);
 			path = TravelBookingApp;
 			sourceTree = "<group>";
@@ -384,6 +422,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D9131A6CE53F8143C146513F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5F78DE42D68D39D968A1516 /* Pods_TravelBookingApp.framework */,
+				E5C084459F399410BFCF6271 /* Pods_TravelBookingApp_TravelBookingAppUITests.framework */,
+				BE436C0F1ACF5AE9EA15ED08 /* Pods_TravelBookingAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -391,6 +439,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EEFC7552DFAA4BF00774EED /* Build configuration list for PBXNativeTarget "TravelBookingApp" */;
 			buildPhases = (
+				2D7888A8DA46453CE1C7283B /* [CP] Check Pods Manifest.lock */,
 				4EEFC7302DFAA4BB00774EED /* Sources */,
 				4EEFC7312DFAA4BB00774EED /* Frameworks */,
 				4EEFC7322DFAA4BB00774EED /* Resources */,
@@ -428,6 +477,8 @@
 				4E6CF3982DFC6A640021980A /* FirebaseStorage */,
 				4E6CF39A2DFC6A640021980A /* FirebaseStorageCombine-Community */,
 				4E6CF39C2DFC6A640021980A /* FirebaseVertexAI */,
+				4E6CF3A92DFC6F4A0021980A /* GoogleSignIn */,
+				4E6CF3AB2DFC6F4A0021980A /* GoogleSignInSwift */,
 			);
 			productName = TravelBookingApp;
 			productReference = 4EEFC7342DFAA4BB00774EED /* TravelBookingApp.app */;
@@ -437,6 +488,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EEFC7582DFAA4BF00774EED /* Build configuration list for PBXNativeTarget "TravelBookingAppTests" */;
 			buildPhases = (
+				E9D799409DB75F00BCEFD227 /* [CP] Check Pods Manifest.lock */,
 				4EEFC73D2DFAA4BF00774EED /* Sources */,
 				4EEFC73E2DFAA4BF00774EED /* Frameworks */,
 				4EEFC73F2DFAA4BF00774EED /* Resources */,
@@ -450,8 +502,6 @@
 				4EEFC7442DFAA4BF00774EED /* TravelBookingAppTests */,
 			);
 			name = TravelBookingAppTests;
-			packageProductDependencies = (
-			);
 			productName = TravelBookingAppTests;
 			productReference = 4EEFC7412DFAA4BF00774EED /* TravelBookingAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -460,6 +510,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EEFC75B2DFAA4BF00774EED /* Build configuration list for PBXNativeTarget "TravelBookingAppUITests" */;
 			buildPhases = (
+				35BD39014E0AEDA602388F5B /* [CP] Check Pods Manifest.lock */,
 				4EEFC7472DFAA4BF00774EED /* Sources */,
 				4EEFC7482DFAA4BF00774EED /* Frameworks */,
 				4EEFC7492DFAA4BF00774EED /* Resources */,
@@ -473,8 +524,6 @@
 				4EEFC74E2DFAA4BF00774EED /* TravelBookingAppUITests */,
 			);
 			name = TravelBookingAppUITests;
-			packageProductDependencies = (
-			);
 			productName = TravelBookingAppUITests;
 			productReference = 4EEFC74B2DFAA4BF00774EED /* TravelBookingAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -513,6 +562,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				4E6CF3672DFC6A640021980A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4E6CF3A82DFC6F4A0021980A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4EEFC7352DFAA4BB00774EED /* Products */;
@@ -532,7 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EEFC78D2DFAB0B900774EED /* Assets.xcassets in Resources */,
-				4E6CF3662DFC69D20021980A /* GoogleService-Info.plist in Resources */,
+				4E6CF3A52DFC6C7C0021980A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +601,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D7888A8DA46453CE1C7283B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelBookingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35BD39014E0AEDA602388F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelBookingApp-TravelBookingAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D799409DB75F00BCEFD227 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelBookingAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EEFC7302DFAA4BB00774EED /* Sources */ = {
@@ -738,14 +857,17 @@
 		};
 		4EEFC7562DFAA4BF00774EED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C364B391BD408E1325CE15 /* Pods-TravelBookingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TravelBookingApp/TravelBookingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H2C4R2VE3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelBookingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -767,14 +889,17 @@
 		};
 		4EEFC7572DFAA4BF00774EED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF27465CE456770D92FEC1DF /* Pods-TravelBookingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TravelBookingApp/TravelBookingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H2C4R2VE3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelBookingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -796,6 +921,7 @@
 		};
 		4EEFC7592DFAA4BF00774EED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 367F0002761A506155C6E891 /* Pods-TravelBookingAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -815,6 +941,7 @@
 		};
 		4EEFC75A2DFAA4BF00774EED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAEB104272B1649F73053FF2 /* Pods-TravelBookingAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -834,6 +961,7 @@
 		};
 		4EEFC75C2DFAA4BF00774EED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714E351832B953076FF8AD67 /* Pods-TravelBookingApp-TravelBookingAppUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -851,6 +979,7 @@
 		};
 		4EEFC75D2DFAA4BF00774EED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00011B1BDDA453DFBABCAD44 /* Pods-TravelBookingApp-TravelBookingAppUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -914,6 +1043,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 11.14.0;
+			};
+		};
+		4E6CF3A82DFC6F4A0021980A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1053,6 +1190,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4E6CF3672DFC6A640021980A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseVertexAI;
+		};
+		4E6CF3A92DFC6F4A0021980A /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E6CF3A82DFC6F4A0021980A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		4E6CF3AB2DFC6F4A0021980A /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E6CF3A82DFC6F4A0021980A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 
