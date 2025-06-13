@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct TrainListView: View {
+struct AvailableTrans: View {
     let trains: [TrainModel]
 
     var body: some View {
@@ -20,6 +20,14 @@ struct TrainListView: View {
                             Text(t.name)
                                 .font(.title2)
                                 .bold()
+                                .overlay(
+                                    LinearGradient(colors: [.orange, .red], startPoint: .topLeading, endPoint: .bottomTrailing)
+                                        .mask(
+                                            Text(t.name)
+                                                .font(.title2)
+                                                .bold()
+                                        )
+                                )
 
                             Text("\(t.source.name) → \(t.destination.name)")
                                 .font(.subheadline)
@@ -36,13 +44,14 @@ struct TrainListView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(.ultraThinMaterial)
                         .cornerRadius(15)
-                        .shadow(radius: 4)
+                        .shadow(radius: 5)
                     }
                 }
             }
             .padding()
         }
-        .navigationTitle("Available Trains")
+        .padding(.top, 20)
+        .navigationTitle("Available trans")
     }
 
 

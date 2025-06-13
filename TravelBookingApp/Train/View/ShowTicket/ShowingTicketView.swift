@@ -16,7 +16,7 @@ struct ShowingTicketView: View {
             Text("🎫 E-Ticket")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
-                .foregroundColor(.white)
+                .foregroundColor(.black.opacity(0.8))
                 .padding(.top)
 
             ZStack {

@@ -13,19 +13,20 @@
 		4E0EE0D02DFB1F8700DDC03A /* TrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0CE2DFB1F8700DDC03A /* TrainModel.swift */; };
 		4E0EE0F12DFBE83D00DDC03A /* SelectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0F02DFBE83D00DDC03A /* SelectingView.swift */; };
 		4E0EE0F92DFBEA9100DDC03A /* SelectingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0F82DFBEA9100DDC03A /* SelectingCard.swift */; };
-		4E0EE0FB2DFBF4EA00DDC03A /* BusHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0FA2DFBF4EA00DDC03A /* BusHomeView.swift */; };
-		4E0EE0FD2DFBF72B00DDC03A /* BusBookingFormViewFromTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0FC2DFBF72B00DDC03A /* BusBookingFormViewFromTicket.swift */; };
 		4E0EE0FF2DFBFCB000DDC03A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE0FE2DFBFCB000DDC03A /* MainTabView.swift */; };
-		4E0EE1022DFC03F400DDC03A /* BusStandSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE1012DFC03F400DDC03A /* BusStandSearchViewModel.swift */; };
-		4E0EE1052DFC07A900DDC03A /* BusTicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE1042DFC07A900DDC03A /* BusTicketRow.swift */; };
-		4E0EE1082DFC168900DDC03A /* BusList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE1072DFC168900DDC03A /* BusList.swift */; };
 		4E0EE10A2DFC1BA600DDC03A /* TrainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE1092DFC1BA600DDC03A /* TrainDetailView.swift */; };
+		4E6CF34C2DFC3AED0021980A /* BusBookingFormViewFromTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF3452DFC3AED0021980A /* BusBookingFormViewFromTicket.swift */; };
+		4E6CF34D2DFC3AED0021980A /* BusHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF3462DFC3AED0021980A /* BusHomeView.swift */; };
+		4E6CF34E2DFC3AED0021980A /* BusTicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF3472DFC3AED0021980A /* BusTicketRow.swift */; };
+		4E6CF34F2DFC3AED0021980A /* BusList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF3492DFC3AED0021980A /* BusList.swift */; };
+		4E6CF3512DFC3B0B0021980A /* BusBookingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF3502DFC3B0B0021980A /* BusBookingFormView.swift */; };
+		4E6CF3532DFC3F9F0021980A /* BusStandSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CF3522DFC3F9F0021980A /* BusStandSearchViewModel.swift */; };
 		4EEFC78A2DFAB0B900774EED /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7832DFAB0B900774EED /* Model.xcdatamodeld */; };
 		4EEFC78C2DFAB0B900774EED /* TravelBookingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */; };
 		4EEFC78D2DFAB0B900774EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFC7852DFAB0B900774EED /* Assets.xcassets */; };
 		4EEFC78F2DFAB1C200774EED /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC78E2DFAB1C200774EED /* PersistenceController.swift */; };
 		4EEFC7992DFAB2DC00774EED /* TrainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7982DFAB2DC00774EED /* TrainHomeView.swift */; };
-		4EEFC79B2DFAB2EE00774EED /* TrainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC79A2DFAB2EE00774EED /* TrainListView.swift */; };
+		4EEFC79B2DFAB2EE00774EED /* AvailableTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC79A2DFAB2EE00774EED /* AvailableTrans.swift */; };
 		4EEFC79D2DFAB2FF00774EED /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC79C2DFAB2FF00774EED /* RouteMapView.swift */; };
 		4EEFC79F2DFAB31100774EED /* BookingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC79E2DFAB31100774EED /* BookingFormView.swift */; };
 		4EEFC7A12DFAB32200774EED /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFC7A02DFAB32200774EED /* WalletView.swift */; };
@@ -56,13 +57,14 @@
 		4E0EE0CE2DFB1F8700DDC03A /* TrainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainModel.swift; sourceTree = "<group>"; };
 		4E0EE0F02DFBE83D00DDC03A /* SelectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingView.swift; sourceTree = "<group>"; };
 		4E0EE0F82DFBEA9100DDC03A /* SelectingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingCard.swift; sourceTree = "<group>"; };
-		4E0EE0FA2DFBF4EA00DDC03A /* BusHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusHomeView.swift; sourceTree = "<group>"; };
-		4E0EE0FC2DFBF72B00DDC03A /* BusBookingFormViewFromTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusBookingFormViewFromTicket.swift; sourceTree = "<group>"; };
 		4E0EE0FE2DFBFCB000DDC03A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		4E0EE1012DFC03F400DDC03A /* BusStandSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStandSearchViewModel.swift; sourceTree = "<group>"; };
-		4E0EE1042DFC07A900DDC03A /* BusTicketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTicketRow.swift; sourceTree = "<group>"; };
-		4E0EE1072DFC168900DDC03A /* BusList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusList.swift; sourceTree = "<group>"; };
 		4E0EE1092DFC1BA600DDC03A /* TrainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailView.swift; sourceTree = "<group>"; };
+		4E6CF3452DFC3AED0021980A /* BusBookingFormViewFromTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusBookingFormViewFromTicket.swift; sourceTree = "<group>"; };
+		4E6CF3462DFC3AED0021980A /* BusHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusHomeView.swift; sourceTree = "<group>"; };
+		4E6CF3472DFC3AED0021980A /* BusTicketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTicketRow.swift; sourceTree = "<group>"; };
+		4E6CF3492DFC3AED0021980A /* BusList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusList.swift; sourceTree = "<group>"; };
+		4E6CF3502DFC3B0B0021980A /* BusBookingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusBookingFormView.swift; sourceTree = "<group>"; };
+		4E6CF3522DFC3F9F0021980A /* BusStandSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStandSearchViewModel.swift; sourceTree = "<group>"; };
 		4EEFC7342DFAA4BB00774EED /* TravelBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEFC7412DFAA4BF00774EED /* TravelBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEFC74B2DFAA4BF00774EED /* TravelBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +73,7 @@
 		4EEFC7892DFAB0B900774EED /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4EEFC78E2DFAB1C200774EED /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		4EEFC7982DFAB2DC00774EED /* TrainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainHomeView.swift; sourceTree = "<group>"; };
-		4EEFC79A2DFAB2EE00774EED /* TrainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListView.swift; sourceTree = "<group>"; };
+		4EEFC79A2DFAB2EE00774EED /* AvailableTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableTrans.swift; sourceTree = "<group>"; };
 		4EEFC79C2DFAB2FF00774EED /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
 		4EEFC79E2DFAB31100774EED /* BookingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormView.swift; sourceTree = "<group>"; };
 		4EEFC7A02DFAB32200774EED /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
@@ -161,7 +163,7 @@
 		4E0EE0CD2DFB1F7000DDC03A /* TrainList */ = {
 			isa = PBXGroup;
 			children = (
-				4EEFC79A2DFAB2EE00774EED /* TrainListView.swift */,
+				4EEFC79A2DFAB2EE00774EED /* AvailableTrans.swift */,
 			);
 			path = TrainList;
 			sourceTree = "<group>";
@@ -186,45 +188,46 @@
 		4E0EE0EE2DFBE76600DDC03A /* Bus */ = {
 			isa = PBXGroup;
 			children = (
-				4E0EE0EF2DFBE76F00DDC03A /* View */,
+				4E6CF34B2DFC3AED0021980A /* View */,
 				4E0EE1002DFC03CC00DDC03A /* ViewModel */,
 			);
 			path = Bus;
 			sourceTree = "<group>";
 		};
-		4E0EE0EF2DFBE76F00DDC03A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				4E0EE1032DFC040900DDC03A /* BusHome */,
-				4E0EE1062DFC166B00DDC03A /* BusList */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		4E0EE1002DFC03CC00DDC03A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4E0EE1012DFC03F400DDC03A /* BusStandSearchViewModel.swift */,
+				4E6CF3522DFC3F9F0021980A /* BusStandSearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		4E0EE1032DFC040900DDC03A /* BusHome */ = {
+		4E6CF3482DFC3AED0021980A /* BusHome */ = {
 			isa = PBXGroup;
 			children = (
-				4E0EE0FA2DFBF4EA00DDC03A /* BusHomeView.swift */,
-				4E0EE0FC2DFBF72B00DDC03A /* BusBookingFormViewFromTicket.swift */,
-				4E0EE1042DFC07A900DDC03A /* BusTicketRow.swift */,
+				4E6CF3452DFC3AED0021980A /* BusBookingFormViewFromTicket.swift */,
+				4E6CF3462DFC3AED0021980A /* BusHomeView.swift */,
+				4E6CF3472DFC3AED0021980A /* BusTicketRow.swift */,
 			);
 			path = BusHome;
 			sourceTree = "<group>";
 		};
-		4E0EE1062DFC166B00DDC03A /* BusList */ = {
+		4E6CF34A2DFC3AED0021980A /* BusList */ = {
 			isa = PBXGroup;
 			children = (
-				4E0EE1072DFC168900DDC03A /* BusList.swift */,
+				4E6CF3492DFC3AED0021980A /* BusList.swift */,
 			);
 			path = BusList;
+			sourceTree = "<group>";
+		};
+		4E6CF34B2DFC3AED0021980A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E6CF3482DFC3AED0021980A /* BusHome */,
+				4E6CF34A2DFC3AED0021980A /* BusList */,
+				4E6CF3502DFC3B0B0021980A /* BusBookingFormView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4EEFC72B2DFAA4BA00774EED = {
@@ -428,28 +431,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0EE1022DFC03F400DDC03A /* BusStandSearchViewModel.swift in Sources */,
+				4E6CF3512DFC3B0B0021980A /* BusBookingFormView.swift in Sources */,
 				4E0EE0F92DFBEA9100DDC03A /* SelectingCard.swift in Sources */,
 				4EEFC78A2DFAB0B900774EED /* Model.xcdatamodeld in Sources */,
-				4EEFC79B2DFAB2EE00774EED /* TrainListView.swift in Sources */,
+				4EEFC79B2DFAB2EE00774EED /* AvailableTrans.swift in Sources */,
 				4E0EE10A2DFC1BA600DDC03A /* TrainDetailView.swift in Sources */,
 				4E0EE0B42DFADE1600DDC03A /* StationSearchViewModel.swift in Sources */,
 				4E0EE0C32DFAFEB200DDC03A /* ShowingTicketView.swift in Sources */,
+				4E6CF34C2DFC3AED0021980A /* BusBookingFormViewFromTicket.swift in Sources */,
+				4E6CF34D2DFC3AED0021980A /* BusHomeView.swift in Sources */,
+				4E6CF3532DFC3F9F0021980A /* BusStandSearchViewModel.swift in Sources */,
+				4E6CF34E2DFC3AED0021980A /* BusTicketRow.swift in Sources */,
+				4E6CF34F2DFC3AED0021980A /* BusList.swift in Sources */,
 				4EEFC78C2DFAB0B900774EED /* TravelBookingAppApp.swift in Sources */,
 				4E0EE0C72DFB1D3700DDC03A /* TrainBookingFormViewFromTicket.swift in Sources */,
 				4EEFC7992DFAB2DC00774EED /* TrainHomeView.swift in Sources */,
 				4EEFC78F2DFAB1C200774EED /* PersistenceController.swift in Sources */,
-				4E0EE0FD2DFBF72B00DDC03A /* BusBookingFormViewFromTicket.swift in Sources */,
 				4E0EE0FF2DFBFCB000DDC03A /* MainTabView.swift in Sources */,
 				4EEFC7B52DFACE8500774EED /* ProfileScreen.swift in Sources */,
-				4E0EE0FB2DFBF4EA00DDC03A /* BusHomeView.swift in Sources */,
 				4E0EE0F12DFBE83D00DDC03A /* SelectingView.swift in Sources */,
-				4E0EE1052DFC07A900DDC03A /* BusTicketRow.swift in Sources */,
 				4EEFC79F2DFAB31100774EED /* BookingFormView.swift in Sources */,
 				4EEFC79D2DFAB2FF00774EED /* RouteMapView.swift in Sources */,
 				4E0EE0D02DFB1F8700DDC03A /* TrainModel.swift in Sources */,
 				4EEFC7A12DFAB32200774EED /* WalletView.swift in Sources */,
-				4E0EE1082DFC168900DDC03A /* BusList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

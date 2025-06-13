@@ -1,3 +1,4 @@
+
 //
 //  BusStandSearchViewModel.swift
 //  TravelBookingApp
@@ -134,5 +135,3 @@ class BusStandSearchViewModel: ObservableObject {
             }
         }
     }
-
-

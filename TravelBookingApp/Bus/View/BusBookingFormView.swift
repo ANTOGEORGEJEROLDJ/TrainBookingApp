@@ -1,14 +1,14 @@
 //
-//  BookingFormView.swift
+//  BusBookingFormView.swift
 //  TravelBookingApp
 //
-//  Created by Paranjothi iOS MacBook Pro on 12/06/25.
+//  Created by Paranjothi iOS MacBook Pro on 13/06/25.
 //
 
 import SwiftUI
 import CoreData
 
-struct BookingFormView: View {
+struct BusBookingFormView: View {
     @Environment(\.managedObjectContext) var ctx
     @Environment(\.dismiss) var dismiss
 
@@ -130,10 +130,7 @@ struct BookingFormView: View {
                     Spacer()
                 }
             }
-            .background(
-                passengerName.isEmpty ? AnyView(Color.gray) : AnyView(LinearGradient(colors: [.orange, .red], startPoint: .topLeading, endPoint: .bottomTrailing))
-            )
-            
+            .background(passengerName.isEmpty ? Color.gray : Color.orange)
             .foregroundColor(.white)
             .cornerRadius(12)
             .disabled(passengerName.isEmpty)

@@ -42,6 +42,10 @@ struct TrainDetailView: View {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("💺 Available Classes")
                             .font(.headline)
+                        
+                        
+                            Spacer()
+                        
                         ForEach(train.classes, id: \.self) { cls in
                             if let price = train.prices[cls] {
                                 HStack {
@@ -52,6 +56,7 @@ struct TrainDetailView: View {
                                         .bold()
                                 }
                                 .padding(.vertical, 4)
+                                .padding(.bottom, 30)
                             }
                         }
                     }
@@ -60,6 +65,7 @@ struct TrainDetailView: View {
                     .background(Color.white.opacity(0.9))
                     .cornerRadius(12)
                     .shadow(radius: 4)
+                    
                     
                 }
 
@@ -86,7 +92,7 @@ struct TrainDetailView: View {
                     }
                 }
             }
-            .padding(.all, -20)
+            .padding(.horizontal, 50)
         }
         .padding()
         .navigationTitle("Train Details")

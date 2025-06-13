@@ -69,7 +69,7 @@ struct TrainHomeView: View {
                             .shadow(radius: 3)
 
                         NavigationLink(
-                            destination: TrainListView(trains: vm.filteredTrains),
+                            destination: AvailableTrans(trains: vm.filteredTrains),
                             isActive: $showingResults
                         ) {
                             EmptyView()
