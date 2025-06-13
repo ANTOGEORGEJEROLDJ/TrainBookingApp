@@ -205,8 +205,8 @@
 		4E6CF3482DFC3AED0021980A /* BusHome */ = {
 			isa = PBXGroup;
 			children = (
-				4E6CF3452DFC3AED0021980A /* BusBookingFormViewFromTicket.swift */,
 				4E6CF3462DFC3AED0021980A /* BusHomeView.swift */,
+				4E6CF3452DFC3AED0021980A /* BusBookingFormViewFromTicket.swift */,
 				4E6CF3472DFC3AED0021980A /* BusTicketRow.swift */,
 			);
 			path = BusHome;
@@ -228,6 +228,15 @@
 				4E6CF3502DFC3B0B0021980A /* BusBookingFormView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4E6CF3542DFC46D50021980A /* Selecting */ = {
+			isa = PBXGroup;
+			children = (
+				4E0EE0F02DFBE83D00DDC03A /* SelectingView.swift */,
+				4E0EE0F82DFBEA9100DDC03A /* SelectingCard.swift */,
+			);
+			path = Selecting;
 			sourceTree = "<group>";
 		};
 		4EEFC72B2DFAA4BA00774EED = {
@@ -263,9 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				4EEFC7872DFAB0B900774EED /* TravelBookingAppApp.swift */,
-				4E0EE0F02DFBE83D00DDC03A /* SelectingView.swift */,
-				4E0EE0F82DFBEA9100DDC03A /* SelectingCard.swift */,
 				4E0EE0FE2DFBFCB000DDC03A /* MainTabView.swift */,
+				4E6CF3542DFC46D50021980A /* Selecting */,
 				4E0EE0EE2DFBE76600DDC03A /* Bus */,
 				4E0EE0ED2DFBE73600DDC03A /* Train */,
 				4E0EE0CF2DFB1F8700DDC03A /* ViewModel */,

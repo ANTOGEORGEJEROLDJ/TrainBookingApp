@@ -14,16 +14,7 @@ struct TravelBookingApp: App {
     var body: some Scene {
         WindowGroup {
             SelectingView()
-//            TabView {
-//                
-//                TrainHomeView()
-//                    .tabItem { Label("Home", systemImage: "house") }
-//                WalletView()
-//                    .tabItem { Label("Wallet", systemImage: "wallet.pass") }
-//
-//                ProfileScreen()
-//                    .tabItem { Label("Profile", systemImage: "person.crop.circle") }
-//            }
+
             .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

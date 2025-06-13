@@ -12,9 +12,7 @@ struct SelectingView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Button(action: {
-                        
-                    }) {
+                    Button(action: {}) {
                         Image("back")
                             .resizable()
                             .scaledToFit()
@@ -33,12 +31,12 @@ struct SelectingView: View {
                 ScrollView {
                     VStack(spacing: 30) {
                         // Bus
-                        NavigationLink(destination: BusHomeView()) {
+                        NavigationLink(destination: MainTabView(selectedMode: .bus)) {
                             SelectingCard(title: "Bus Traveling", image: "busImage", color: .red)
                         }
 
                         // Train
-                        NavigationLink(destination: MainTabView()) {
+                        NavigationLink(destination: MainTabView(selectedMode: .train)) {
                             SelectingCard(title: "Train Traveling", image: "TrainImage", color: .orange)
                         }
                     }
@@ -46,7 +44,7 @@ struct SelectingView: View {
                     .padding(.top, 100)
                 }
             }
-        }
+        } .navigationBarBackButtonHidden(true)
     }
 }
 

@@ -24,6 +24,7 @@ struct TrainHomeView: View {
     @State private var selectedTicket: TicketCard? = nil
     @State private var showBooking = false
     @StateObject var vm = StationSearchViewModel()
+    @Environment (\.dismiss) private var dismiss
 
     let sampleTickets = [
         TicketCard(from: "Chennai", to: "Tuticorin", departure: "06:00 AM", arrival: "12:00 PM", price: "₹450"),
@@ -33,6 +34,20 @@ struct TrainHomeView: View {
 
     var body: some View {
         NavigationStack {
+            
+            HStack{
+                Button(action: {
+                    dismiss()
+                }){
+                    Image("back")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40)
+                    
+                    Spacer()
+                }
+            }.padding()
+            
             ScrollView {
                 VStack(spacing: 20) {
                     HStack {
@@ -142,7 +157,7 @@ struct TrainHomeView: View {
 
                 }
                 .padding()
-            }
+            }.padding(.top, -24)
         }
     }
 }

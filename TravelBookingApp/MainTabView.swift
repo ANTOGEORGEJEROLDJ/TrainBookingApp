@@ -7,21 +7,44 @@
 
 import SwiftUI
 
-struct MainTabView: View {
-    var body: some View {
-        TabView {
-        
-                        TrainHomeView()
-                            .tabItem { Label("Home", systemImage: "house") }
-                        WalletView()
-                            .tabItem { Label("Wallet", systemImage: "wallet.pass") }
-        
-                        ProfileScreen()
-                            .tabItem { Label("Profile", systemImage: "person.crop.circle") }
-                    }
-    }
+enum TravelMode {
+    case bus
+    case train
 }
 
+struct MainTabView: View {
+    var selectedMode: TravelMode
+
+    var body: some View {
+        TabView {
+            // Dynamic Home Tab
+            Group {
+                if selectedMode == .bus {
+                    BusHomeView()
+                        .tabItem {
+                            Label("Home", systemImage: "bus.fill")
+                        }
+                } else {
+                    TrainHomeView()
+                        .tabItem {
+                            Label("Home", systemImage: "train.side.front.car")
+                        }
+                }
+            }
+
+            // Common Tabs
+            WalletView()
+                .tabItem {
+                    Label("Wallet", systemImage: "wallet.pass")
+                }
+
+            ProfileScreen()
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle")
+                }
+        }.navigationBarBackButtonHidden(true) // Hide default back button
+    }
+}
 #Preview {
-    MainTabView()
+    MainTabView(selectedMode: .train)
 }

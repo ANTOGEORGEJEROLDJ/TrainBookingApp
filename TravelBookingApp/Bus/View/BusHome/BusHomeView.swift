@@ -21,9 +21,11 @@ struct BusHomeView: View {
     @State private var src = ""
     @State private var dest = ""
     @State private var showingResults = false
+    @State private var naviSelectingView = false
     @State private var selectedTicket: BusTicketCard? = nil
     @State private var showBooking = false
     @StateObject var vm = BusStandSearchViewModel()
+    @Environment(\.dismiss) private var dismiss // Add dismiss environment
 
     let sampleTickets = [
         BusTicketCard(from: "Chennai", to: "Tuticorin", departure: "06:00 AM", arrival: "12:00 PM", price: "₹450"),
@@ -33,7 +35,22 @@ struct BusHomeView: View {
 
     var body: some View {
         NavigationStack {
+            HStack{
+                Button(action: {
+                    dismiss()  // Pops current view, goes back
+                }) {
+                    Image("back")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40)
+                        .padding()
+                }
+                Spacer()
+            }
+            
             ScrollView {
+                
+                
                 VStack(spacing: 20) {
                     // Header
                     HStack {
@@ -91,6 +108,7 @@ struct BusHomeView: View {
                     }
                     .cardStyle()
                     .shadow(radius: 3)
+                    .padding()
 
                     // Ticket List
                     Text("Available Buses")
@@ -112,6 +130,7 @@ struct BusHomeView: View {
                     .hidden()
                 }
                 .padding()
+                .padding(.top, -18)
             }
         }
     }
@@ -129,4 +148,7 @@ extension View {
 extension Color {
     static let themeRed = Color("red") // Define in Assets
     static let themeGray = Color("gray")
+}
+#Preview {
+    BusHomeView()
 }
