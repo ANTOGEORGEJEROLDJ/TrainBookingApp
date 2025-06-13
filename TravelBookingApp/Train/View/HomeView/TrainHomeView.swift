@@ -134,7 +134,7 @@ struct TrainHomeView: View {
 
                     // Hidden NavigationLink for Booking
                     NavigationLink(
-                        destination: selectedTicket.map { BookingFormViewFromTicket(ticket: $0) },
+                        destination: selectedTicket.map { TrainBookingFormViewFromTicket(ticket: $0) },
                         isActive: $showBooking
                     ) {
                         EmptyView()

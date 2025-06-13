@@ -23,7 +23,7 @@ struct BusHomeView: View {
     @State private var showingResults = false
     @State private var selectedTicket: BusTicketCard? = nil
     @State private var showBooking = false
-    @StateObject var vm = StationSearchViewModel()
+    @StateObject var vm = BusStandSearchViewModel()
 
     let sampleTickets = [
         BusTicketCard(from: "Chennai", to: "Tuticorin", departure: "06:00 AM", arrival: "12:00 PM", price: "₹450"),
@@ -35,46 +35,47 @@ struct BusHomeView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 20) {
+                    // Header
                     HStack {
                         VStack(alignment: .leading) {
                             Text("HariBUS")
-                                .font(.title)
-                                .bold()
+                                .font(.largeTitle).bold()
                             Text("Find cheap bus tickets")
-                                .foregroundColor(.gray)
+                                .foregroundColor(.secondary)
                         }
                         Spacer()
                         Image(systemName: "person.crop.circle.fill")
-                            .resizable()
-                            .frame(width: 55, height: 55)
+                            .font(.system(size: 44))
+                            .foregroundColor(.red)
                     }
 
-                    VStack(spacing: 16) {
-                        Text("Bus Ticket Booking")
-                            .font(.title3)
-                            .bold()
+                    // Search Form
+                    VStack(spacing: 12) {
+                        HStack {
+                            Image(systemName: "location.fill")
+                            TextField("From", text: $src)
+                        }
+                        .padding()
+                        .background(Color.white.opacity(0.8))
+                        .cornerRadius(8)
+                        .shadow(radius: 3)
 
-                        TextField("From", text: $src)
-                            .padding()
-                            .frame(width: 320, height: 50)
-                            .background(Color.white)
-                            .cornerRadius(12)
-                            .shadow(radius: 3)
-
-                        TextField("To", text: $dest)
-                            .padding()
-                            .frame(width: 320, height: 50)
-                            .background(Color.white)
-                            .cornerRadius(13)
-                            .shadow(radius: 3)
-
+                        HStack {
+                            Image(systemName: "location.fill")
+                            TextField("To", text: $dest)
+                        }
+                        .padding()
+                        .background(Color.white.opacity(0.8))
+                        .cornerRadius(8)
+                        .shadow(radius: 3)
+                        
                         NavigationLink(
                             destination: TrainListView(trains: vm.filteredTrains),
                             isActive: $showingResults
                         ) {
                             EmptyView()
                         }
-
+                        
                         Button("Search Buses") {
                             vm.searchTrains(from: src, to: dest)
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
@@ -85,64 +86,47 @@ struct BusHomeView: View {
                         .padding()
                         .background(Color.red)
                         .foregroundColor(.white)
-                        .cornerRadius(15)
+                        .cornerRadius(10)
                         .disabled(src.isEmpty || dest.isEmpty)
-                        .shadow(radius: 5)
                     }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(15)
+                    .cardStyle()
                     .shadow(radius: 3)
 
-                    VStack(alignment: .leading) {
-                        Text("Cheap bus tickets")
-                            .font(.title3)
-                            .bold()
-                        Text("From Chennai to Tuticorin")
-                            .foregroundColor(.gray)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    // Ticket List
+                    Text("Available Buses")
+                        .font(.title3)
+                        .bold()
+                        .frame(maxWidth: .infinity, alignment: .leading)
 
                     ForEach(sampleTickets) { ticket in
-                        VStack(alignment: .leading, spacing: 8) {
-                            HStack {
-                                Text("\(ticket.from) ➝ \(ticket.to)")
-                                    .font(.headline)
-                                Spacer()
-                                Text(ticket.price)
-                                    .foregroundColor(.green)
-                            }
-                            Text("Departure: \(ticket.departure)")
-                            Text("Arrival: \(ticket.arrival)")
-                                .foregroundColor(.gray)
-
-                            Button("Book Now") {
-                                selectedTicket = ticket
-                                showBooking = true
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(Color.red)
-                            .foregroundColor(.white)
-                            .cornerRadius(15)
+                        BusTicketRow(ticket: ticket) {
+                            selectedTicket = ticket
+                            showBooking = true
                         }
-                        .padding()
-                        .background(Color.white)
-                        .cornerRadius(15)
-                        .shadow(radius: 4)
+                        .cardStyle()
                     }
 
-                    // Hidden NavigationLink for Booking
-                    NavigationLink(
-                        destination: selectedTicket.map { BusBookingFormViewFromTicket(Busticket: $0) },
-                        isActive: $showBooking
-                    ) {
-                        EmptyView()
-                    }
-
+                    NavigationLink("", destination: selectedTicket.map {
+                        BusBookingFormViewFromTicket(Busticket: $0)
+                    }, isActive: $showBooking)
+                    .hidden()
                 }
                 .padding()
             }
         }
     }
+}
+extension View {
+    func cardStyle() -> some View {
+        self
+            .padding()
+            .background(Color.white)
+            .cornerRadius(15)
+            .shadow(color: Color.black.opacity(0.4), radius: 4, x: 3, y: 3)
+    }
+}
+
+extension Color {
+    static let themeRed = Color("red") // Define in Assets
+    static let themeGray = Color("gray")
 }

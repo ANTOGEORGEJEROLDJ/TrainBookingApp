@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BookingFormViewFromTicket: View {
+struct TrainBookingFormViewFromTicket: View {
     let ticket: TicketCard
     
 
