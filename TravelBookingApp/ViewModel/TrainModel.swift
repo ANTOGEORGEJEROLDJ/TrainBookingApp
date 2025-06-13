@@ -23,5 +23,7 @@ struct TrainModel: Identifiable {
     let arrival: Date
     let classes: [String]
     let prices: [String: Double]
+    var stops: [String] // ← change here
+
 }
 
